@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trab.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,300;1,8..144,400&display=swap" rel="stylesheet">
+    <title>Formulário de Candidatura para Vaga na Amatex</title>
+   
+</head>
+<body>
+    <header>
+        <li><a href="index.html">Página inicial</a></li>
+        <h1>Candidatura para Vaga na Amatex</h1>
+    </header>
+    <div class="cand-trab">
+        <form id="application-form">
+        <section>
+            <h2>Informações Pessoais</h2>
+            <label for="nome">Nome:</label>
+            <input class="form-control form-control-lg" type="text" placeholder="Nome" aria-label=".form-control-lg example">
+            
+            <label for="email">E-mail:</label>
+            <input class="form-control form-control-lg" type="email" placeholder="Email" aria-label=".form-control-lg example" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input class="form-control form-control-lg" type="tel" placeholder="Telefone" aria-label=".Telefone example">
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <label for="instituicao">Instituição:</label>
+            <input type="text" id="instituicao" name="instituicao" required>
+            
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" required>
+            
+            <label for="conclusao">Ano de Conclusão:</label>
+            <input type="date" id="conclusao" name="conclusao" required>  
+        </section>
+        
+        <section>
+            <h2>Experiência Profissional</h2>
+            <label for="experiencia">Descreva sua experiência:</label>
+            <textarea id="experiencia" name="experiencia" rows="4"></textarea>
+        </section>
+        
+        <section>
+            <h2>Motivação</h2>
+            <label for="motivacao">Por que você deseja trabalhar na nossa startup?</label>
+            <textarea id="motivacao" name="motivacao" rows="4" required></textarea>
+        </section>
+
+        <button type="submit">Enviar Candidatura</button>
+    </div>     
+</body>
+</html>

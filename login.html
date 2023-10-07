@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        
+
+
+        .login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #428bca;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #3071a9;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="formlogin">
+          <label for="email">E-mail:</label>
+          <input type="text" id="emaill" name="email" >
+      
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" >
+      
+          <button type="submit" id="entrarr" onclick="logar(event)">Entrar</button>
+          <a class="btn btn-success" id="btcadastro" href="cadastro-isa.html">Cadastrar</a>
+        </form>
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+  
+  <li><a href="index.html">Voltar</a></li>
+  <script src="botaovoltar.js"></script>
+  <script src="botaocadastro.js"></script>
+  <script defer src="cadastrar.js"></script>
+  
+</body>
+</html>

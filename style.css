@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,300;1,8..144,500&display=swap");
+* {
+  font-family: "Roboto Serif", serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+    height: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 5rem;
+}
+.background{
+    background-image: url(https://credcarbo.com/wp-content/uploads/2022/03/seringueira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+.background{
+    color: #271313;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+    height: auto;
+    margin-left: 5rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.C-icon{
+    margin-right: 5rem;
+}
+.icone ion-icon{
+color: #240808;
+font-size: 2rem;
+cursor: pointer;
+}
+ul li a:hover{
+    text-transform: capitalize;
+    color: rgb(53, 20, 20);
+    border-bottom: solid 1px;
+}
+hr{
+    border-bottom: solid 0.1px;
+    color: rgb(81, 56, 54);
+    margin-top: 15px;
+}
+.C-title{
+    margin-left: 5rem;
+    margin-top: 6rem;
+}
+.C-title h1{
+    color: #271313;
+    font-size: 8rem;
+    text-align: center;
+}
+.C-title p{
+    text-align: center;
+    color: rgb(33, 17, 17);
+    font-weight: 900;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.C-title button{
+    margin-top: 2rem;
+    background-color: rgb(60, 139, 60);
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.C-title button :hover{
+letter-spacing: 2px;
+transition: 0.3s all;
+
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+}
+ button a{
+    color: black;
+ }

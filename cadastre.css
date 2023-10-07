@@ -1,0 +1,168 @@
+.container-of-form{
+
+    min-height: 50vh;
+  
+    width: 50%;
+  
+  }
+  
+  body{
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    height: 100vh;
+  
+    background-image: url('rio-amazonas.jpg');
+  
+    background-size:cover;
+  
+    background-repeat: no-repeat;
+  
+    background-attachment: fixed;
+  
+    background-position: center;
+  
+    margin: 0;
+  
+    padding: 0;
+  
+  }
+  
+  .cadastre{
+  
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    row-gap: 15px;
+  
+    margin-top: 3%;
+  
+    height: 50vh;
+  
+    background: rgba(255, 255, 255, 0.2); 
+  
+    border-radius: 15px; 
+  
+    padding: 20px;
+  
+    backdrop-filter: blur(3px); 
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  
+    text-align: center;
+  
+  }
+  
+  
+  .inputs{
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    text-align: center;
+  
+  }
+  
+  input{
+  
+    height: 35px;
+  
+    width: 300px;
+  
+  }
+  
+  label{
+  
+    font-size: 20px;
+  
+  }
+  
+  button{
+  
+    padding: 10px;
+  
+    border: none;
+  
+    background-color: #1e2f23;
+  
+    border-radius: 15px;
+  
+    color: #a7c957;
+  
+    font-size: 16px;
+  
+  }
+  
+  @media (min-width: 634px) and (max-width: 768px){
+  
+    .container-of-form{
+  
+      width: 100%;
+  
+    }
+  
+    .cadastre{
+  
+      width: 50%;
+  
+      height: auto;
+  
+      margin-left: 25%;
+  
+    }
+  
+    input{
+  
+     height: 30px;
+  
+     width: 250px;
+  
+    }
+  
+  }
+  
+  @media(min-width: 320px) and (max-width: 450px) {
+  
+    .container-of-form{
+  
+      width: 100%;
+  
+    }
+  
+    .cadastre{
+  
+      width: 100%;
+  
+      margin-left: 0;
+  
+    }
+  
+    input{
+  
+     height: 30px;
+  
+     width:200px;
+  
+  }
+  
+  }
+  li a{
+    width: 100px;
+    height: 50px;
+    background-color: #7ba05b;
+    border-radius: 50px;
+    color: white;
+    
+  }

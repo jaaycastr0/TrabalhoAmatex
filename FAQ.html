@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FAQ.css">
+   <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+   <script type="text/javascript" src="script.js"> </script>
+   
+</head>
+<body>
+    <li><a href="index.html">Tela inicial</a></li>
+    <div class="accordion">
+        <div class="image-box">
+            <img src="undraw_questions_re_1fy7.svg" alt="">
+        </div>
+        <div class="accordion-text">
+            <div class="title">FAQ</div>
+        
+        <ul class="faq-text">
+            <li>
+                <div class="question-arrow">
+                    <span class="question">O que é Latex?</span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <p>O látex, líquido esbranquiçado e de aspecto viscoso, composto basicamente por hidrocarbonetos, incluindo pequenas porcentagens de proteínas, carboidratos e lipídios, é extraído por meio de incisões na casca da seringueira, processo que é chamado de sangria.</p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">Qual o intuito da fundação Amatex? </span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <p>Desenvolver junto com a epresa, uma forma de aproveitar a extração do latex de forma sustenvável!</p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question"> Qual a importância do Latex para o mercado? </span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <p>A substância passou a ser utilizada como matéria-prima para a produção de correias, mangueiras até chegar em produtos mais modernos, como pneus de avião e materiais cirúrgicos.</p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="question-arrow">
+                    <span class="question">como me candidato para trabalhar na startup? </span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <p>Entre na pagina trabalhe conosco e envie seu curriculo</p>
+                <span class="line"></span>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let li = document.querySelectorAll(".faq-text li");
+            let clickedLi; 
+
+            for (var i = 0; i < li.length; i++) {
+                li[i].addEventListener("click", (e) => {
+                    if (e.target.classList.contains("question-arrow")) {
+                        clickedLi = e.target.parentElement;
+                    } else {
+                        clickedLi = e.target.parentElement.parentElement;
+                    }
+                    clickedLi.classList.toggle("showAnswer");
+                });
+            }
+        });
+    </script>
+</body>

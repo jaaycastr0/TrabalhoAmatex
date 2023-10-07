@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,300;1,8..144,500&display=swap");
+* {
+  font-family: "Roboto Serif", serif;
+}
+body {
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(https://oagronomico.iac.sp.gov.br/wp-content/uploads/2018/04/qualidade-mudas-de-seringueira-v70-informacoes-tecnicas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 60px;
+}
+header h1{
+  color: #faf8f8;
+  font-size: 3.5rem;
+  
+}
+.container {
+  text-align: center;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 280;
+  letter-spacing: 0.1rem;
+  color: #3b7a0a;
+  font-weight: lighter, 300;
+  font-size: 350%;
+  margin-bottom: 2rem;
+}
+.card-deck{
+  justify-content: center;
+}
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+.card {
+  flex: 0 0 calc(33.33% -  2rem);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 30px 30px;
+  margin: 1.8rem;
+  background-color: #f6f1f1d6;
+  text-align: justify;
+  box-shadow: 10px 10px 10px rgba(212, 199, 199, 0.389);
+  position: relative;
+}
+.card-title {
+  text-align: center;
+  margin-bottom: 9px;
+  font-size: 17px;
+  position: relative;
+  color: #422423;
+  font-weight: 400;
+  
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  max-width: 300px;
+  max-height: 100%;
+  height: 115px;
+  height: 200px;
+  display: flex;
+}
+.icon {
+    margin-bottom: 20px;
+}
+
+
+.card-text {
+  font-size: 0.7rem; 
+  cursor: pointer;
+  color: #695a5a;
+}
+.card-body {
+  flex-grow: 1;
+  height: 215px;
+  overflow: scroll;
+  position: relative;
+}
+.card-body::-webkit-scrollbar{
+  display: none;
+}
